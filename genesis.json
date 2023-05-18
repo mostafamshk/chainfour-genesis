@@ -40,6 +40,20 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "blocklychain1f9zdq54rdnj5qalshqp67unkvwqpwm2sc4zr6v",
+          "pub_key": null,
+          "account_number": "4",
+          "sequence": "4"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "blocklychain14cmex8jtum39mplhghltskz5efjwnmkkzgnuv0",
+          "pub_key": null,
+          "account_number": "5",
+          "sequence": "5"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "blocklychain1wfw667dturfpq03vvq5zmjg4gkctf03gscklwg",
           "pub_key": null,
           "account_number": "1",
@@ -71,6 +85,15 @@
       },
       "balances": [
         {
+          "address": "blocklychain1f9zdq54rdnj5qalshqp67unkvwqpwm2sc4zr6v",
+          "coins": [
+            {
+              "denom": "nbkc",
+              "amount": "1000000000000"
+            }
+          ]
+        },
+        {
           "address": "blocklychain12y7uk6ha8yksac98vgc96tm9ljhx98e73usr4x",
           "coins": [
             {
@@ -85,6 +108,15 @@
             {
               "denom": "nbkc",
               "amount": "1000000000000"
+            }
+          ]
+        },
+        {
+          "address": "blocklychain14cmex8jtum39mplhghltskz5efjwnmkkzgnuv0",
+          "coins": [
+            {
+              "denom": "nbkc",
+              "amount": "1000000000"
             }
           ]
         },
@@ -149,7 +181,142 @@
       "allowances": []
     },
     "genutil": {
-      "gen_txs": []
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "bkc-age-2",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "blocklychain1f9zdq54rdnj5qalshqp67unkvwqpwm2sc4zr6v",
+                "validator_address": "blocklychainvaloper1f9zdq54rdnj5qalshqp67unkvwqpwm2s6pmmr2",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "bmBi1J6hjQQuQ2sflL5LzQNF9h6WdGxa6MSKbLASRxY="
+                },
+                "value": {
+                  "denom": "nbkc",
+                  "amount": "100000000000"
+                }
+              }
+            ],
+            "memo": "2af7758eb971ef06bbb225731c8cad08768b52af@167.235.202.83:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AsdbYfII8kD9AVmZPs86jvInxVEDl8sB98RbdPAV8+s6"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "4"
+              }
+            ],
+            "fee": {
+              "amount": [
+                {
+                  "denom": "nbkc",
+                  "amount": "100000"
+                }
+              ],
+              "gas_limit": "1000000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "r+R+13iDx4aSumX8dCPCzyg2f1sny3aaNNzkYluxv8glwCeim3+3FPJ7/NR1ohQsJBO28ZpqNbu0w1trjsrPYw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "bkc-age-2",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "blocklychain1a79v6t97qld3s0aws74pw9ftzjgwxcklt7kylx",
+                "validator_address": "blocklychainvaloper1a79v6t97qld3s0aws74pw9ftzjgwxcklf20uxq",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "u5t2IYCSPpSqVdWufqvsST5ng1a8cfwNovMKAkBblpk="
+                },
+                "value": {
+                  "denom": "nbkc",
+                  "amount": "100000000000"
+                }
+              }
+            ],
+            "memo": "47bac8fde26549d91e964609f522c8a885b06b61@116.203.209.140:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A3sUHSOXg3durxNIokf/oVUH5o3Q2UGENXtL9ITL7dgV"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [
+                {
+                  "denom": "nbkc",
+                  "amount": "100000"
+                }
+              ],
+              "gas_limit": "1000000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "Jd3Pm6M6KxkIFkfpP2dkumpGuIqpQJhpw5TF5N/1spol5tv6S8SOCnFzAk25AZRg0yp3N7sH0DfsGWQpAs82XQ=="
+          ]
+        }
+      ]
     },
     "gov": {
       "starting_proposal_id": "1",
